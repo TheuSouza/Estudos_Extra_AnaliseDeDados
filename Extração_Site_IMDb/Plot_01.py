@@ -32,7 +32,7 @@ plt.ylabel('Número de Filmes')
 plt.xticks(rotation=90)
 plt.grid(axis='y', linestyle='--', alpha=0.5)
 plt.tight_layout()
-plt.show
+plt.show()
 
 
 plt.figure(figsize=(19, 10))

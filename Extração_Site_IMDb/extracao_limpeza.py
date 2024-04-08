@@ -27,7 +27,6 @@ soup = BeautifulSoup(pagina, 'html.parser')
 for linha in soup.find_all('div', class_='sc-b0691f29-0 jbYPfh cli-children'):
    conteudo = linha.get_text(';').strip().split(';')
    conteudo = conteudo[0].split('.') + conteudo[1:5]
-   print(conteudo)
    conteudo_extraido.append(conteudo)
 
 del conteudo_extraido[162][1:4]
@@ -39,8 +38,6 @@ conteudo_extraido[71][1] += conteudo_extraido[71][2]
 del conteudo_extraido[71][2]
 del conteudo_extraido[57][5]
 conteudo_extraido[57].insert(4,'Not Rated')
-
-print(conteudo_extraido)
 
 for linha in conteudo_extraido:
     linha[1] = linha[1].strip()
